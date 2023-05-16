@@ -137,7 +137,7 @@ function IndexLandingPage() {
       try {
         setLoading(true); // show loading indicator
         const response = await axios.get(
-          `https://newsapi.org/v2/top-headlines?country=us&category=${category}&q=${query}&apiKey=f736862a0e634754ad2df9eaf663eb6c`
+          `https://newsapi.org/v2/top-headlines?country=us&category=${category}&q=${query}&apiKey=`
         ); // replace with your API endpoint and key
         setNews(response.data.articles); // update news state with data
       } catch (err) {
