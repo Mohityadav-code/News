@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
 
 export default function NavButtons(props) {
-  console.log('NavButtons', props.onbuttonclick);
 
   const [isHovered, setIsHovered] = useState(false);
   const [navColor, setNavColor] = useState("#A5C9CA");
   const [navTextColor, setNavTextColor] = useState("#2C3333");
+
   useEffect(() => {
     const changeColor = () => {
       if (window.scrollY >= 100) {
@@ -21,23 +23,20 @@ export default function NavButtons(props) {
       window.removeEventListener("scroll", changeColor);
     };
   }, []);
-  const submitHandler = function () {
-    console.log('NavButtons', props.onbuttonclick);
-    props.onbuttonclick(props.buttons);
-  }
 
   const divClass = `bg-[${navColor}] text-[${navTextColor}] text-sm font-normal p-2 shadow-md rounded-md px-3 mx-2 transform transition-all ease-in-out duration-200 ${
     isHovered ? "scale-110" : "scale-100"
   }`;
 
+  const navItem = props.buttons
+  const navItemLower = navItem.toLowerCase()
   return (
     <div
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       className={divClass}
     >
-     <button onClick={submitHandler}>{props.buttons}</button>
-
+      <Link to={`/${navItemLower}`}>{navItem} </Link>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import { SiApplenews } from "react-icons/si";
 import NavButtons from "./components/NavButtons";
 import { useState, useEffect } from "react";
 
-export default function NavBar(props) {
+export default function NavBar() {
   const [bgColor, setbgColor] = useState("#E7F6F2");
   const [textColor, settextColor] = useState("#2C3333");
   useEffect(() => {
@@ -21,36 +21,28 @@ export default function NavBar(props) {
       window.removeEventListener("scroll", changeColor);
     };
   }, []);
-  const classNames = `flex justify-between w-full fixed items-center p-2 text-[${textColor}] bg-[${bgColor}]`;
+  const classNames = `flex justify-between w-full fixed items-center text-[${textColor}] bg-[${bgColor}]`;
   const navButtons = [
-    "POLITICS",
-    "U.S.NEWS",
-    "WORLD",
-    "BUISNESS",
-    "TECH",
+    "BUSINESS",
+    "ENTERTAINMENT",
     "HEALTH",
-    "CULTURE",
+    "WORLD",
+    "SCIENCE",
+    "SPORTS",
+    "TECHNOLOGY",
   ];
-  console.log('NavBar', props.onCategoryChange);
   return (
-
-
     <div className={classNames}>
-      <div className="logo flex items-center font-bold font-serif text-2xl hover:text-teal-100 hover:scale-110 ease-in-out p-2 shadow-md rounded-md px-4">
+      <div className="flex items-center p-2 px-4 font-serif text-2xl font-bold ease-in-out rounded-md shadow-md logo hover:text-teal-100 hover:scale-110">
         <SiApplenews className="w-5 h-5" />
         <span className="pl-1">NEWS</span>
       </div>
-      <div className="flex-grow pl-10 flex items-center justify-start">
+      <div className="flex items-center justify-start flex-grow pl-10">
         {navButtons.map((element, index) => {
-          return (
-            <NavButtons key={index}
-              onbuttonclick={props.onCategoryChange}
-              buttons={element}
-            />
-          );
+          return <NavButtons key={index} buttons={element} />;
         })}
       </div>
-      <div className="pr-10 flex items-center justify-end">
+      <div className="flex items-center justify-end pr-10">
         <NavButtons buttons="LOGIN" />
       </div>
     </div>

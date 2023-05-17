@@ -8,12 +8,11 @@ export default function SmallArticle() {
   const [error, setError] = useState(null); // error state
 
   useEffect(() => {
-    // function to fetch news data
     async function fetchNews() {
       try {
         setLoading(true); // show loading indicator
         const response = await axios.get(
-          `https://newsapi.org/v2/top-headlines?country=us&apiKey=f736862a0e634754ad2df9eaf663eb6c`
+          `https://newsapi.org/v2/top-headlines?country=us&apiKey=d298a5c72d2f4075a3f8b98dd055c046`
         ); // replace with your API endpoint and key
         setNews(response.data.articles); // update news state with data
       } catch (err) {
@@ -31,14 +30,14 @@ export default function SmallArticle() {
 
   return (
     <div>
-      <div className="half w-1/2 h-full ">
-        <div className="img h-2/3  mx-20 ">
+      <div className="w-1/2 h-full half ">
+        <div className="mx-20 img h-2/3 ">
           <img src={news.urlToImage} alt="" />
         </div>
-        <div className="date text-sm mt-2 font-thin">
+        <div className="mt-2 text-sm font-thin date">
           {moment(news.publishedAt).format("MMMM Do YYYY, h:mm:ss a")}
         </div>
-        <div className="Text-sans  font-semibold text-2xl">
+        <div className="text-2xl font-semibold Text-sans">
           <h2>{news.title}</h2>
         </div>
         <div className="description">

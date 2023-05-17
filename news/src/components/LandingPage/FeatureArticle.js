@@ -5,14 +5,14 @@
 // // export default function FeatureArticle() {
 // //   return (
 // //     <>
-// //       <div className="  text-4xl font-semibold font-serif mt-5 px-5">
+// //       <div className="px-5 mt-5 font-serif text-4xl font-semibold ">
 // //         Featured Article
 // //       </div>
-// //       <div className=" bg-red-500 h-full mx-5  flex  flex-wrap ">
-// //         <div className="half w-1/2 h-full bg-green-500">
-// //           <div className="img h-2/3  mx-20 bg-red-600">Image Here</div>
-// //           <div className="date text-sm mt-2 font-thin">january 11, 2023</div>
-// //           <div className="Text-sans  font-semibold text-2xl">
+// //       <div className="flex flex-wrap h-full mx-5 bg-red-500 ">
+// //         <div className="w-1/2 h-full bg-green-500 half">
+// //           <div className="mx-20 bg-red-600 img h-2/3">Image Here</div>
+// //           <div className="mt-2 text-sm font-thin date">january 11, 2023</div>
+// //           <div className="text-2xl font-semibold Text-sans">
 // //             Lorem ipsum dolor sit amet consectetur adipisicing.
 // //           </div>
 // //           <div className="description">
@@ -22,44 +22,44 @@
 // //             reprehenderit repellendus iure voluptates!
 // //           </div>
 // //         </div>
-// //         <div className="other-half w-1/2 h-full bg-blue-600 ">
-// //           <div className="article flex  h-1/3 bg-green-600">
-// //             <div className="img h-full  w-full   ml-10  bg-red-500 ">
+// //         <div className="w-1/2 h-full bg-blue-600 other-half ">
+// //           <div className="flex bg-green-600 article h-1/3">
+// //             <div className="w-full h-full ml-10 bg-red-500 img ">
 // //               Image Here
 // //             </div>
-// //             <div className="flex  flex-col ">
-// //               <div className="date date text-sm  font-thin">
+// //             <div className="flex flex-col ">
+// //               <div className="text-sm font-thin date">
 // //                 january 11, 2023
 // //               </div>
-// //               <div className="title  w-full Text-sans text-center font-semibold text-2xl ">
+// //               <div className="w-full text-2xl font-semibold text-center title Text-sans ">
 // //                 Lorem ipsum dolor sit amet consectetur adipisicing.
 // //               </div>
 // //             </div>
 // //           </div>
 // //           <BlackBorder />
-// //           <div className="article flex  h-1/3 bg-green-600">
-// //             <div className="img h-full  w-full   ml-10  bg-red-500 ">
+// //           <div className="flex bg-green-600 article h-1/3">
+// //             <div className="w-full h-full ml-10 bg-red-500 img ">
 // //               Image Here
 // //             </div>
-// //             <div className="flex  flex-col ">
-// //               <div className="date date text-sm  font-thin">
+// //             <div className="flex flex-col ">
+// //               <div className="text-sm font-thin date">
 // //                 january 11, 2023
 // //               </div>
-// //               <div className="title  w-full Text-sans text-center font-semibold text-2xl ">
+// //               <div className="w-full text-2xl font-semibold text-center title Text-sans ">
 // //                 Lorem ipsum dolor sit amet consectetur adipisicing.
 // //               </div>
 // //             </div>
 // //           </div>
 // //           <BlackBorder />
-// //           <div className="article flex  h-1/3 bg-green-600">
-// //             <div className="img h-full  w-full   ml-10  bg-red-500 ">
+// //           <div className="flex bg-green-600 article h-1/3">
+// //             <div className="w-full h-full ml-10 bg-red-500 img ">
 // //               Image Here
 // //             </div>
-// //             <div className="flex  flex-col ">
-// //               <div className="date date text-sm  font-thin">
+// //             <div className="flex flex-col ">
+// //               <div className="text-sm font-thin date">
 // //                 january 11, 2023
 // //               </div>
-// //               <div className="title  w-full Text-sans text-center font-semibold text-2xl ">
+// //               <div className="w-full text-2xl font-semibold text-center title Text-sans ">
 // //                 Lorem ipsum dolor sit amet consectetur adipisicing.
 // //               </div>
 // //             </div>
