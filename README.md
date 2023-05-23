@@ -2,7 +2,7 @@
 
 React News  is a web application built with React.js and uses the NewsAPI to fetch and display live news from various categories. It is a single-page application with dynamic, user-friendly interface.
 
-![App Screenshot](./news/public/screenshot.png)
+![App Screenshot](./news/public/screenshot2.png)
 
 ## Features
 
