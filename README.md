@@ -20,7 +20,7 @@ React News  is a web application built with React.js and uses the NewsAPI to fet
 2. Navigate to the cloned directory and install the required packages.
  
  ```bash
- cd react-news-aggregator
+ cd news
 npm install
 ```
 3. Start the application
